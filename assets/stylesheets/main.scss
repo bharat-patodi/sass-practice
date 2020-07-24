@@ -1,0 +1,67 @@
+/* ---------------------------------------------------------------
+Import partials
+--------------------------------------------------------------- */
+
+@import "reset";
+@import "variables";
+@import "base-styles";
+@import "modular";
+@import "header";
+@import "hero";
+@import "confused";
+@import "footer";
+
+/* ---------------------------------------------------------------
+Project Specific Styles
+--------------------------------------------------------------- */
+
+.box {
+  text-align: center;
+  h2 {
+    color: goldenrod;
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  figure {
+    border: 10px solid black;
+    max-width: 500px;
+  }
+}
+
+.box3 {
+  h2 {
+    color: #5a4d41;
+  }
+}
+
+.box5 {
+  h2 {
+    color: #3498db;
+  }
+}
+
+figure {
+  width: 100%;
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+// Media Queries (Since they are not propagating in specific elements)
+@media (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+  }
+  .box4 {
+    order: -1;
+  }
+
+  .box-text {
+    // flex-direction: row;
+  }
+
+  .box {
+    text-align: left;
+  }
+}

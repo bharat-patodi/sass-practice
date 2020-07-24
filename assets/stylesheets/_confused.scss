@@ -1,0 +1,66 @@
+/* ---------------------------------------------------------------
+Project Specific Styles
+--------------------------------------------------------------- */
+.confused {
+  h2 {
+    color: #5a4d41;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.confused__text--path {
+  color: palevioletred;
+}
+
+.confused__text--equal {
+  color: orange;
+}
+
+.confused__text--fuzzy {
+  color: orangered;
+}
+
+.confused__text--important {
+  color: salmon;
+}
+
+.all-cards {
+  flex-direction: row;
+}
+
+.card {
+  flex-basis: 6rem;
+  background-color: darken($color: mistyrose, $amount: 10);
+  box-shadow: 0 0 16px darken($color: mistyrose, $amount: 20);
+  border-radius: 5px;
+
+  &:hover {
+    background-color: darken(mistyrose, $amount: 20);
+    box-shadow: 0 0 16px darken($color: mistyrose, $amount: 40);
+  }
+
+  &:hover h3 {
+    background-color: darken(mistyrose, $amount: 30);
+    box-shadow: 0 0 16px darken($color: mistyrose, $amount: 40);
+  }
+
+  img {
+    // padding: 1rem;
+    max-width: 50%;
+    margin: 1rem auto;
+  }
+
+  h3 {
+    text-align: center;
+    color: #ecf0f1;
+    text-shadow: 4px 4px 0 rgba(10, 10, 10, 0.1);
+    background-color: darken($color: mistyrose, $amount: 20);
+    box-shadow: 0 0 16px darken($color: mistyrose, $amount: 30);
+    text-shadow: none;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+  }
+}

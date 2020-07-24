@@ -1,0 +1,32 @@
+/* ---------------------------------------------------------------
+Header
+--------------------------------------------------------------- */
+
+header {
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: mistyrose;
+}
+
+.header__nav__ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav--icon-links {
+  //   background-color: red;
+}
+
+.header__nav--text-links {
+  display: none;
+}
+
+// Media Queries (Since they are not propagating in specific elements)
+@media (min-width: 768px) {
+  .header__nav--icon-links {
+    display: none;
+  }
+  .header__nav--text-links {
+    display: block;
+  }
+}

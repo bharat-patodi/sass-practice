@@ -1,0 +1,18 @@
+/* ---------------------------------------------------------------
+Project Specific Styles
+--------------------------------------------------------------- */
+
+.hero {
+  //   background-color: palevioletred;
+  //   This blob is not visible
+  background-image: url(/assets/images/wave.svg);
+  background-image: url(/assets/images/blob.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: mistyrose;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  color: white;
+}
